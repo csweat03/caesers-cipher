@@ -4,8 +4,8 @@ import me.christian.caesers_cipher.CaesersCipher;
 
 public class Main {
     public static void main(String[] args) {
-        String input = "how are you doing today";
-        int offset = 12;
+        String input = "This is a message";
+        int offset = 8;
 
         CaesersCipher encryptCaesersCipher = new CaesersCipher(input, offset);
 
