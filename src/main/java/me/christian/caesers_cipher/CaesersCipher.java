@@ -14,6 +14,7 @@ public class CaesersCipher {
     }
 
     public final String encrypt() {
+        if (input.equalsIgnoreCase("")) return "";
         AtomicReference<String> output = new AtomicReference<>("");
         // Open a stream for each letter in a String
         Arrays.stream(input.split(""))
@@ -22,6 +23,7 @@ public class CaesersCipher {
         return output.get();
     }
     public final String decrypt() {
+        if (input.equalsIgnoreCase("")) return "";
         AtomicReference<String> output = new AtomicReference<>("");
         // Open a stream for each letter in a String
         Arrays.stream(input.split(""))
