@@ -1,7 +1,23 @@
 package me.christian;
 
+import me.christian.caesers_cipher.CaesersCipher;
+
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        String input = "how are you doing today";
+        int offset = 12;
+
+        CaesersCipher encryptCaesersCipher = new CaesersCipher(input, offset);
+
+        String cipher = encryptCaesersCipher.encrypt();
+
+        System.out.printf("Input: %s%n", input);
+        System.out.printf("Offset: %s%n", offset);
+        System.out.printf("Cipher: %s%n", cipher);
+
+        CaesersCipher decryptCaesersCipher = new CaesersCipher(cipher, offset);
+
+        String decipher = decryptCaesersCipher.decrypt();
+        System.out.printf("Decipher: %s%n", decipher);
     }
 }
