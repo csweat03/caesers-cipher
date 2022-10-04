@@ -9,9 +9,6 @@ This is an implementation of Caeser's Cipher in Java 17, with built-in ciphering
 - [@csweat03](https://www.github.com/csweat03)
 
 
-## Demo
-
-[JDoodle Demo](https://jdoodle.com/a/5eq7)
 ## Screenshots
 
 ![](https://i.gyazo.com/b5761f7d73ec4b0b7b0838a4880bc3fb.png)
